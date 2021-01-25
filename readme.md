@@ -21,3 +21,9 @@ npm run build
 ```ts
 const basepath = import.meta.env.PROD ? import.meta.env.VITE_BASE : '/';
 ```
+
+-   in a .env file in your project root
+
+```env
+VITE_BASE=/svite/
+```
