@@ -16,7 +16,6 @@
         console.log('VITE_BASE', import.meta.env.VITE_BASE);
         console.log('using basepath=', basepath);
 
-
         nowTime = dayjs(Date.now()).format('ddd M/D/YY h:mm:ss.SSS a');
 
         const interval = setInterval(() => {
@@ -36,7 +35,7 @@
         <p>Home!</p>
     </Route>
     <!-- must use the non-slot method if you want to pass route param (id) and query params (location) -->
-    <Route path="click/:id" component={Component}/>
+    <Route path="click/:id" component={Component} />
     <!-- can use the slot method below just to show something else -->
     <Route path="/about">
         <p>About!</p>
@@ -47,6 +46,10 @@
 </Router>
 
 <style>
+    :global(html, body) {
+        font-family: 'Helvetica Neue', sans-serif;
+        padding: .25em;
+    }
     h1 {
         color: orange; /* change color an save to see hmr update */
     }
