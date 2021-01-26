@@ -48,7 +48,7 @@
 <style>
     :global(html, body) {
         font-family: 'Helvetica Neue', sans-serif;
-        padding: .25em;
+        padding: 0.25em;
     }
     h1 {
         color: orange; /* change color an save to see hmr update */
